@@ -1,0 +1,88 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2C3539; /* Gunmetal gray color */
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #e60d6b, #ff7700, #008CBA); /* Gradient background */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  text-align: center;
+  color: white; /* Change text color to white for better readability */
+}
+
+h1 {
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: none; /* Initially hide the form */
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.logo {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the logo horizontally */
+  margin-bottom: 20px; /* Adds some space between the logo and the heading */
+}
+
+/* Gradient for the "FoodEezze" text */
+.container h1 span.gradient {
+  background: linear-gradient(to bottom right, #230de6, #b55807, #ba0044);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Style required fields */
+input[required],
+textarea[required] {
+  border-color: #ff0000; /* Red border for required fields */
+}

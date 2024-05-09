@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now or Call Me</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Add the favicon link -->
+  <link rel="icon" href="Foodeezee.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+  <img src="Foodeezee.png" alt="Company Logo" class="logo">
+  <h1>Welcome to <span class="gradient">FoodEezze</span></h1>
+  <p>Eat Easy, Live Effortlessly: FoodEezze, Simplifying Your Day!</p>
+  <button class="btn" id="order-now-btn">Place A Request</button>
+  <button class="btn" id="request-call-btn">Request a Call</button>
+  <form action="/submit_order.php" method="POST" class="order-form" id="order-form" style="display: none;">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    
+    <label for="phone">Telephone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="request">Request:</label><br>
+    <textarea id="request" name="request" rows="4" required></textarea><br>
+
+    <label for="instructions">Special Instructions:</label><br>
+    <textarea id="instructions" name="instructions" rows="4"></textarea><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+  <form action="/request_call.php" method="post" class="call-form" id="call-form" style="display: none;">
+    <label for="phone">Enter your phone number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" required><br>
+    <input type="submit" value="Request Call">
+  </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
